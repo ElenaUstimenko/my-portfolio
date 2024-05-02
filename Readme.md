@@ -1,12 +1,43 @@
-# **my-portfolio**  
+![Image alt](./src/images/for-readme/main_img.png)
+
+
+# **my-portfolio**
 
 
 ---
 
 
-**Стек технологий**
+## Link:
 
-![Webpack](https://img.shields.io/badge/webpack-%238DD6F9.svg?style=for-the-badge&logo=webpack&logoColor=black)   ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)   ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+
+https://github.com/ElenaUstimenko/my-portfolio.git
 
 
 ---
+
+
+## Description:
+
+The project demonstrates my skills and abilities. On the site you can find information about most of my projects and find all the necessary links to contact me.
+
+
+---
+
+
+## Stack:
+
+- React
+- CSS
+- BEM metodology
+- Functional components
+- Framer Motion Library
+- Adaptive layout
+
+
+---
+
+
+1. полоса прокрутки 
+
+
+2. попробовать выложить на гитХаб пэйджес https://skillbox.ru/media/code/kak-sozdat-besplatnyy-sayt-na-github-pages/
