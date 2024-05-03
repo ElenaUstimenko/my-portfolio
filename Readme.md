@@ -20,24 +20,17 @@ On the site you can find information about most of my projects and find all the 
 
 ## Stack:
 
-
 ✔️ React
-
 
 ✔️ CSS
 
-
 ✔️ BEM metodology
-
 
 ✔️ Functional components
 
-
 ✔️ Framer Motion Library
 
-
 ✔️ Adaptive layout
-
 
 ✔️ Prettier
 
