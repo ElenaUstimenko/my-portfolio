@@ -1,16 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import './CardProject.css';
 
-const CardProject = ({
-  title,
-  description,
-  stack,
-  github,
-  browser,
-  image,
-  onClick,
-  ...props
-}) => {
+const CardProject = ({ title, description, stack, github, browser, image }) => {
   const [linkDisabled, setLinkDisabled] = useState(false);
 
   const handleNoLinkClick = e => {

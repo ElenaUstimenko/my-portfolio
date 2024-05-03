@@ -1,4 +1,4 @@
-import { forwardRef, useState } from 'react';
+import { forwardRef } from 'react';
 import { motion } from 'framer-motion';
 import { projectsList } from '../../utils/constants';
 import CardProject from '../CardProject/CardProject';

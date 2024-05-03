@@ -5,7 +5,7 @@ const About = () => {
   const [frontend, setFrontend] = useState(false);
 
   useEffect(() => {
-    let i = document.querySelector('.about__name');
+    const i = document.querySelector('.about__name');
     setTimeout(() => {
       i.style.borderRight = 0;
       setFrontend(true);

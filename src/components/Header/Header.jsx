@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Header.css';
 
 const Header = ({ refs }) => {
@@ -25,14 +25,14 @@ const Header = ({ refs }) => {
           Stack
         </button>
         <button
-         onClick={() => {
-          handlePress();
-          refs.projectsRef.current.scrollIntoView({
-            block: 'start',
-            behavior: 'smooth'
-          });
-        }}
-        className={`header__link ${isPressed ? 'pressed' : ''}`}
+          onClick={() => {
+            handlePress();
+            refs.projectsRef.current.scrollIntoView({
+              block: 'start',
+              behavior: 'smooth'
+            });
+          }}
+          className={`header__link ${isPressed ? 'pressed' : ''}`}
         >
           Projects
         </button>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import './Contact.css';
 import { motion } from 'framer-motion';
 
@@ -15,7 +15,7 @@ const Contact = ({ image, text, title, link, custom }) => {
       x: 0,
       y: 0,
       opacity: 1,
-      transition: { delay: isPressed ? 0 : custom / 6}
+      transition: { delay: isPressed ? 0 : custom / 6 }
     })
   };
 
@@ -28,11 +28,12 @@ const Contact = ({ image, text, title, link, custom }) => {
   };
 
   return (
-    <motion.div variants={textAnimation} 
-    custom={custom} 
-    className={`contact ${isPressed ? 'pressed' : ''}`}
-    onTouchStart={handleTouchStart}
-    onTouchEnd={handleTouchEnd}
+    <motion.div
+      variants={textAnimation}
+      custom={custom}
+      className={`contact ${isPressed ? 'pressed' : ''}`}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       <div className='contact__links'>
         <a
