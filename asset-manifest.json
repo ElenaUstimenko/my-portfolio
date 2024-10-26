@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.6e8ea262.css",
-    "main.js": "/my-portfolio/static/js/main.f2107ba7.js",
+    "main.js": "/my-portfolio/static/js/main.3230e519.js",
     "static/media/russian-travel.png": "/my-portfolio/static/media/russian-travel.c9e9391f9d7587c2a78d.png",
     "static/media/conference.png": "/my-portfolio/static/media/conference.842b91a5ae930ef76c34.png",
     "static/media/mesto.png": "/my-portfolio/static/media/mesto.4b6ee126298f78ba7662.png",
@@ -15,6 +15,7 @@
     "static/media/juralight.woff2": "/my-portfolio/static/media/juralight.e0115e0da58f20a9750c.woff2",
     "static/media/my-project.jpg": "/my-portfolio/static/media/my-project.f21dbc371f606c91828a.jpg",
     "static/media/learn.png": "/my-portfolio/static/media/learn.8e255503edbcb7584ab3.png",
+    "static/media/support.png": "/my-portfolio/static/media/support.f123cf801c3b6b158882.png",
     "static/media/express.png": "/my-portfolio/static/media/express.14bef7ddfed77510e0a2.png",
     "static/media/css.png": "/my-portfolio/static/media/css.80dd7bf1cb24c1c3b1c1.png",
     "static/media/postman.svg": "/my-portfolio/static/media/postman.c74cd48d00339ba03ff2e6ed3f9d0c4d.svg",
@@ -43,10 +44,10 @@
     "static/media/ts.svg": "/my-portfolio/static/media/ts.f20748caf2dac55710ddeed71de0bac4.svg",
     "static/media/npm.svg": "/my-portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "main.6e8ea262.css.map": "/my-portfolio/static/css/main.6e8ea262.css.map",
-    "main.f2107ba7.js.map": "/my-portfolio/static/js/main.f2107ba7.js.map"
+    "main.3230e519.js.map": "/my-portfolio/static/js/main.3230e519.js.map"
   },
   "entrypoints": [
     "static/css/main.6e8ea262.css",
-    "static/js/main.f2107ba7.js"
+    "static/js/main.3230e519.js"
   ]
 }
