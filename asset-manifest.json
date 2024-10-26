@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.6e8ea262.css",
-    "main.js": "/my-portfolio/static/js/main.3147fae4.js",
+    "main.js": "/my-portfolio/static/js/main.f2107ba7.js",
     "static/media/russian-travel.png": "/my-portfolio/static/media/russian-travel.c9e9391f9d7587c2a78d.png",
+    "static/media/conference.png": "/my-portfolio/static/media/conference.842b91a5ae930ef76c34.png",
     "static/media/mesto.png": "/my-portfolio/static/media/mesto.4b6ee126298f78ba7662.png",
     "static/media/juralight.ttf": "/my-portfolio/static/media/juralight.1325bc12bfd559d655e7.ttf",
     "static/media/movies.png": "/my-portfolio/static/media/movies.93c266f32f633c95cabb.png",
-    "static/media/party-shaker.png": "/my-portfolio/static/media/party-shaker.d8b255878cc989ee527f.png",
     "static/media/movies2.png": "/my-portfolio/static/media/movies2.7d251cb3f12f36a31d0c.png",
     "static/media/calendar.png": "/my-portfolio/static/media/calendar.4aeaec5397d06da49481.png",
     "static/media/woman.png": "/my-portfolio/static/media/woman.a5b7ad64826e75aaee98.png",
@@ -21,6 +21,7 @@
     "static/media/github.svg": "/my-portfolio/static/media/github.895050b20cdc3aefa3177ef8508b789b.svg",
     "static/media/react.svg": "/my-portfolio/static/media/react.867e22e5a0394f9e99bb018feec45d06.svg",
     "static/media/schedule-calendar.svg": "/my-portfolio/static/media/schedule-calendar.192a11e0e1dc252f188c4e433a18d4cf.svg",
+    "static/media/docker.svg": "/my-portfolio/static/media/docker.d2c794954faa0ffb3494612fbc85202e.svg",
     "static/media/react-tl.svg": "/my-portfolio/static/media/react-tl.f57b349b4d9df56c9b48c916a8d5adfb.svg",
     "static/media/telegram.svg": "/my-portfolio/static/media/telegram.04cf4804f41145386b50aed7306f8116.svg",
     "static/media/cv.svg": "/my-portfolio/static/media/cv.54e41bea77a06f4f95a53192b6003e46.svg",
@@ -42,10 +43,10 @@
     "static/media/ts.svg": "/my-portfolio/static/media/ts.f20748caf2dac55710ddeed71de0bac4.svg",
     "static/media/npm.svg": "/my-portfolio/static/media/npm.8c0606a7c392a7d33d03e67c80d6f40a.svg",
     "main.6e8ea262.css.map": "/my-portfolio/static/css/main.6e8ea262.css.map",
-    "main.3147fae4.js.map": "/my-portfolio/static/js/main.3147fae4.js.map"
+    "main.f2107ba7.js.map": "/my-portfolio/static/js/main.f2107ba7.js.map"
   },
   "entrypoints": [
     "static/css/main.6e8ea262.css",
-    "static/js/main.3147fae4.js"
+    "static/js/main.f2107ba7.js"
   ]
 }
