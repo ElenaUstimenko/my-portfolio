@@ -1,7 +1,8 @@
+import conference from '../../src/images/projects/conference.png';
+import support from '../../src/images/projects/support.png';
 import myProject from '../../src/images/projects/my-project.jpg';
 import portfolio from '../../src/images/projects/portfolio.png';
 import woman from '../../src/images/projects/woman.png';
-import conference from '../../src/images/projects/conference.png';
 import calendar from '../../src/images/projects/calendar.png';
 import movies from '../../src/images/projects/movies.png';
 import movies2 from '../../src/images/projects/movies2.png';
@@ -53,6 +54,16 @@ export const projectsList = [
   },
   {
     id: 2,
+    title: 'Technical support',
+    description: `Personal user account with technical support communication function.`,
+    stack: [
+      'Stack: React, SCSS, classnames'
+    ],
+    github: 'https://github.com/ElenaUstimenko/test-task-for-CarX-Technologies',
+    image: support
+  },
+  {
+    id: 3,
     title: 'My project',
     description: `Pet-project: The project demonstrates my skills and abilities.`,
     stack: [
@@ -62,7 +73,7 @@ export const projectsList = [
     image: myProject
   },
   {
-    id: 3,
+    id: 4,
     title: 'Portfolio web-developer',
     description: `The project demonstrates my skills and abilities. On the site it is possible to find information about all my projects and find all the necessary links to contact me.`,
     stack: ['Stack: React, CSS, BEM, Prettier'],
@@ -70,7 +81,7 @@ export const projectsList = [
     image: portfolio
   },
   {
-    id: 4,
+    id: 5,
     title: 'Women in the nuclear industry',
     description: `Team development of the site for the Women’s Initiative Development Support Fund "Association of Women in the Nuclear Industry". Production in 2024.`,
     stack: [
@@ -80,7 +91,7 @@ export const projectsList = [
     image: woman
   },
   {
-    id: 5,
+    id: 6,
     title: 'Calendar',
     description: `Pet-project: calendar (without using libraries) + added option to change theme.`,
     stack: ['Stack: React, TypeScript'],
@@ -88,7 +99,7 @@ export const projectsList = [
     image: calendar
   },
   {
-    id: 6,
+    id: 7,
     title: 'Analogue Kinopoisk (frontend)',
     description: `Development of a site where you can find movies on request and save them in your personal account. Frontend.`,
     stack: [
@@ -98,7 +109,7 @@ export const projectsList = [
     image: movies
   },
   {
-    id: 7,
+    id: 8,
     title: 'Analogue Kinopoisk (backend)',
     description: `Development of a site where you can find movies on request and save them in your personal account. Backend.`,
     stack: [
@@ -108,7 +119,7 @@ export const projectsList = [
     image: movies2
   },
   {
-    id: 8,
+    id: 9,
     title: 'Analogue Instagram',
     description: `Development of a site - an interactive page where you can add photos, delete them and put likes.`,
     stack: ['Stack: React, Node.js, Express, MongoDB, Postman, Git'],
@@ -116,7 +127,7 @@ export const projectsList = [
     image: mesto
   },
   {
-    id: 9,
+    id: 10,
     title: 'Landing page',
     description: `This project introduces people to the most picturesque corners of Russia.`,
     stack: ['Stack: VanillaJS, HTML, CSS, flex, grid, BEM'],
@@ -124,7 +135,7 @@ export const projectsList = [
     image: russianTravel
   },
   {
-    id: 10,
+    id: 11,
     title: 'Landing page',
     description: `The project is dedicated to teaching methods and techniques for quickly memorizing new information`,
     stack: ['Stack: VanillaJS, HTML, CSS, BEM'],
