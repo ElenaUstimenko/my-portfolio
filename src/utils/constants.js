@@ -1,7 +1,7 @@
 import myProject from '../../src/images/projects/my-project.jpg';
 import portfolio from '../../src/images/projects/portfolio.png';
 import woman from '../../src/images/projects/woman.png';
-import partyShaker from '../../src/images/projects/party-shaker.png';
+import conference from '../../src/images/projects/conference.png';
 import calendar from '../../src/images/projects/calendar.png';
 import movies from '../../src/images/projects/movies.png';
 import movies2 from '../../src/images/projects/movies2.png';
@@ -33,6 +33,7 @@ import figma from '../../src/images/stack/figma.svg';
 import calendar1 from '../../src/images/stack/calendar.svg';
 import calendar2 from '../../src/images/stack/schedule-calendar.svg';
 import github from '../../src/images/stack/github.svg';
+import docker from '../../src/images/stack/docker.svg';
 
 import mail from '../../src/images/icons/mail.svg';
 import githubLink from '../../src/images/icons/github.svg';
@@ -42,6 +43,16 @@ import cv from '../../src/images/icons/cv.svg';
 export const projectsList = [
   {
     id: 1,
+    title: 'Сonference',
+    description: `Website for information and registration for the conference.`,
+    stack: [
+      'Stack: React, TypeScript, SCSS, classnames, Yandex Metrica'
+    ],
+    browser: 'https://carx-gamedev.carx-online.com/',
+    image: conference
+  },
+  {
+    id: 2,
     title: 'My project',
     description: `Pet-project: The project demonstrates my skills and abilities.`,
     stack: [
@@ -51,7 +62,7 @@ export const projectsList = [
     image: myProject
   },
   {
-    id: 2,
+    id: 3,
     title: 'Portfolio web-developer',
     description: `The project demonstrates my skills and abilities. On the site it is possible to find information about all my projects and find all the necessary links to contact me.`,
     stack: ['Stack: React, CSS, BEM, Prettier'],
@@ -59,7 +70,7 @@ export const projectsList = [
     image: portfolio
   },
   {
-    id: 3,
+    id: 4,
     title: 'Women in the nuclear industry',
     description: `Team development of the site for the Women’s Initiative Development Support Fund "Association of Women in the Nuclear Industry". Production in 2024.`,
     stack: [
@@ -67,16 +78,6 @@ export const projectsList = [
     ],
     browser: 'no',
     image: woman
-  },
-  {
-    id: 4,
-    title: 'PartyShaker',
-    description: `Team development of service, which gives access to the library of cocktail recipes with a flexible search system and the ability to create your own recipes. Production in 2024. Link to MVP (first version).`,
-    stack: [
-      'Stack: React, TypeScript, SCSS, UI Kit, architecture FSD, classnames'
-    ],
-    browser: ' https://partyshaker.ru/',
-    image: partyShaker
   },
   {
     id: 5,
@@ -222,8 +223,12 @@ export const stackList = [
     image: figma
   },
   {
-    title: 'Github',
+    title: 'GitHub',
     image: github
+  },
+  {
+    title: 'Docker',
+    image: docker
   },
   {
     title: 'Linear',
