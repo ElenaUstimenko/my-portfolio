@@ -10,8 +10,11 @@ const LanguageSwitcher = () => {
 
   return (
     <div className='languageSwitcher'>
-      <button onClick={() => changeLanguage('en')}>EN</button>
-      <button onClick={() => changeLanguage('ru')}>RU</button>
+      <label for='filter' class='switch' aria-label='Toggle Filter'>
+          <input type='checkbox' id='filter' />
+          <span onClick={() => changeLanguage('en')}>EN</span>
+          <span onClick={() => changeLanguage('ru')}>RU</span>
+      </label>
     </div>
   );
 };

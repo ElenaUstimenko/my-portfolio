@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import './Header.css';
 
 const Header = ({ refs }) => {
@@ -51,6 +52,7 @@ const Header = ({ refs }) => {
         {t('contact')}
         </button>
       </div>
+      <LanguageSwitcher />
     </header>
   );
 };
