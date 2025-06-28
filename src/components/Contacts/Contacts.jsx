@@ -1,8 +1,9 @@
 import { forwardRef } from 'react';
-import './Contacts.css';
 import { motion } from 'framer-motion';
-import Contact from '../Contact/Contact';
 import { contactList } from '../../utils/constants';
+import { useTranslation } from 'react-i18next';
+import Contact from '../Contact/Contact';
+import './Contacts.css';
 
 const textAnimation = {
   hidden: {
@@ -19,6 +20,8 @@ const textAnimation = {
 };
 
 const Contacts = ({ contactRef }, ref) => {
+  const { t } = useTranslation();
+
   return (
     <motion.section
       className='contacts'
@@ -27,7 +30,7 @@ const Contacts = ({ contactRef }, ref) => {
       viewport={{ amount: 0.1, once: true }}
     >
       <h3 className='contacts__title' ref={contactRef}>
-        Contact me
+        {t('contactMe')}
       </h3>
       <div className='contacts__info'>
         <motion.p
@@ -35,8 +38,8 @@ const Contacts = ({ contactRef }, ref) => {
           custom={0.3}
           className='contacts__data'
         >
-          Current location:{' '}
-          <span className='contacts__data-span'> Russia, Krasnodar </span>{' '}
+          {t('currentLocation')}:{' '}
+          <span className='contacts__data-span'> {t('RussiaKrasnodar')} </span>{' '}
           <br />{' '}
         </motion.p>
         <motion.p
@@ -44,7 +47,7 @@ const Contacts = ({ contactRef }, ref) => {
           custom={0.7}
           className='contacts__data'
         >
-          Status: <span className='contacts__data-span'>open to work</span>
+          {t('status')}: <span className='contacts__data-span'>{t('openToWork')}</span>
         </motion.p>
       </div>
       <div className='contact-container'>

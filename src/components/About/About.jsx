@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher';
 import './About.css';
 
 const About = () => {
+  const { t } = useTranslation();
   const [frontend, setFrontend] = useState(false);
 
   useEffect(() => {
@@ -14,8 +17,9 @@ const About = () => {
 
   return (
     <section className='about'>
-      <h1 className='about__name'>Elena Ustimenko</h1>
-      {frontend && <h2 className='about__profession'>web developer</h2>}
+       <LanguageSwitcher />
+      <h1 className='about__name'>{t('name')}</h1>
+      {frontend && <h2 className='about__profession'>{t('profession')}</h2>}
     </section>
   );
 };

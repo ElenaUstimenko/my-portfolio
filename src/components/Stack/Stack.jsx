@@ -1,9 +1,12 @@
 import { forwardRef } from 'react';
 import { stackList } from '../../utils/constants';
-import './Stack.css';
 import { motion } from 'framer-motion';
+import { useTranslation } from 'react-i18next';
+import './Stack.css';
 
 const Stack = ({ stackRef }, ref) => {
+  const { t } = useTranslation();
+
   const textAnimation = {
     hidden: {
       x: 0,
@@ -21,7 +24,7 @@ const Stack = ({ stackRef }, ref) => {
   return (
     <section className='stack'>
       <h3 className='stack__title' ref={stackRef}>
-        Stack
+        {t('stack')}
       </h3>
 
       <motion.div

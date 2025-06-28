@@ -1,7 +1,9 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import './Header.css';
 
 const Header = ({ refs }) => {
+   const { t } = useTranslation();
   const [isPressed, setIsPressed] = useState(false);
 
   const handlePress = () => {
@@ -22,7 +24,7 @@ const Header = ({ refs }) => {
           }}
           className={`header__link ${isPressed ? 'pressed' : ''}`}
         >
-          Stack
+          {t('stack')}
         </button>
         <button
           onClick={() => {
@@ -34,7 +36,7 @@ const Header = ({ refs }) => {
           }}
           className={`header__link ${isPressed ? 'pressed' : ''}`}
         >
-          Projects
+       {t('projects')}
         </button>
         <button
           onClick={() => {
@@ -46,7 +48,7 @@ const Header = ({ refs }) => {
           }}
           className={`header__link ${isPressed ? 'pressed' : ''}`}
         >
-          Contact
+        {t('contact')}
         </button>
       </div>
     </header>

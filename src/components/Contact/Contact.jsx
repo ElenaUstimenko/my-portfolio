@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import './Contact.css';
 import { motion } from 'framer-motion';
+import './Contact.css';
 
 const Contact = ({ image, text, title, link, custom }) => {
   const [isPressed, setIsPressed] = useState(false);

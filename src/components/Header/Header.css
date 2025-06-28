@@ -27,28 +27,27 @@
   cursor: pointer;
   transition: 0.3s ease;
   border-radius: 10px;
-}
 
-.header__link:hover {
-  color: var(--color-bg-neon);
-  box-shadow: 0 0 15px var(--color-bg-neon);
-  text-shadow: 0 0 15px var(--color-bg-neon);
-}
+  &:hover {
+    color: var(--color-bg-neon);
+    box-shadow: 0 0 15px var(--color-bg-neon);
+    text-shadow: 0 0 15px var(--color-bg-neon);
+  }
 
-.pressed {
-  color: var(--color-bg-neon);
-  box-shadow: 0 0 15px var(--color-bg-neon);
-  text-shadow: 0 0 15px var(--color-bg-neon);
-}
+  &.pressed {
+    color: var(--color-bg-neon);
+    box-shadow: 0 0 15px var(--color-bg-neon);
+    text-shadow: 0 0 15px var(--color-bg-neon);
+  }
 
-@media (max-width: 650px) {
-  .header__link {
+  @media (max-width: 650px) {
     font-size: 25px;
   }
-}
 
-@media (max-width: 420px) {
-  .header__link {
+  @media (max-width: 420px) {
     font-size: 18px;
   }
 }
+
+
+

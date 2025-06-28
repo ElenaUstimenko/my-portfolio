@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import './CardProject.css';
 
 const CardProject = ({ title, description, stack, github, browser, image }) => {
+  const { t } = useTranslation();
   const [linkDisabled, setLinkDisabled] = useState(false);
 
   const handleNoLinkClick = e => {
@@ -86,7 +88,7 @@ const CardProject = ({ title, description, stack, github, browser, image }) => {
           <ul className='card__stack-items'>
             {stack.map((item, index) => (
               <li className='card__stack-item text' key={index}>
-                {item}
+                {t('stackTitle')}: {item}
               </li>
             ))}
           </ul>
@@ -98,7 +100,7 @@ const CardProject = ({ title, description, stack, github, browser, image }) => {
                 target='_blank'
                 rel='noreferrer'
               >
-                GitHub Link
+                {t('linkGitHub')}
               </a>
             )}
             {browser ? (
@@ -109,14 +111,14 @@ const CardProject = ({ title, description, stack, github, browser, image }) => {
                   target='_blank'
                   rel='noreferrer'
                 >
-                  Browser Link
+                  {t('linkBrowser')}
                 </a>
               ) : (
                 <p
                   className={`card__link ${linkDisabled ? 'disabled' : ''}`}
                   onClick={() => handleNoLinkClick}
                 >
-                  Will be added soon
+                  {t('addedSoon')}
                 </p>
               )
             ) : null}

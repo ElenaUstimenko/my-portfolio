@@ -1,10 +1,13 @@
 import { forwardRef } from 'react';
 import { motion } from 'framer-motion';
-import { projectsList } from '../../utils/constants';
+import { projectsData } from '../../utils/constants';
+import { useTranslation } from 'react-i18next';
 import CardProject from '../CardProject/CardProject';
 import './Projects.css';
 
 const Projects = ({ projectsRef }, ref) => {
+  const { t } = useTranslation();
+
   const textAnimation = {
     hidden: {
       x: 100,
@@ -19,6 +22,14 @@ const Projects = ({ projectsRef }, ref) => {
     })
   };
 
+  const projectsTranslations = t('projectsList', { returnObjects: true });
+  
+  const projectsList = Object.keys(projectsData).map(key => ({
+    ...projectsData[key],
+    title: projectsTranslations[key]?.title || '',
+    description: projectsTranslations[key]?.description || ''
+  }));
+
   return (
     <motion.div
       ref={projectsRef}
@@ -27,7 +38,7 @@ const Projects = ({ projectsRef }, ref) => {
       viewport={{ amount: 0.1, once: true }}
       className='projects'
     >
-      <h3 className='projects__title'>Projects</h3>
+      <h3 className='projects__title'>{t('projects')}</h3>
       <ul className='projects__list'>
         {projectsList.map(project => (
           <CardProject
@@ -48,7 +59,7 @@ const Projects = ({ projectsRef }, ref) => {
           custom={0.3}
           className='projects__data'
         >
-          and other mini projects at
+          {t('andOther')}
           <span className='projects__data-span'> GitHub... </span> <br />{' '}
         </motion.p>
       </div>

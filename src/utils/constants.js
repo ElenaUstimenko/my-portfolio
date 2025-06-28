@@ -1,138 +1,146 @@
-import conference from '../../src/images/projects/conference.png';
-import support from '../../src/images/projects/support.png';
-import myProject from '../../src/images/projects/my-project.jpg';
-import portfolio from '../../src/images/projects/portfolio.png';
-import woman from '../../src/images/projects/woman.png';
-import calendar from '../../src/images/projects/calendar.png';
-import movies from '../../src/images/projects/movies.png';
-import movies2 from '../../src/images/projects/movies2.png';
-import mesto from '../../src/images/projects/mesto.png';
-import russianTravel from '../../src/images/projects/russian-travel.png';
-import learn from '../../src/images/projects/learn.png';
+import europe from 'images/projects/EU.webp';
+import school from 'images/projects/school.webp';
+import conference from 'images/projects/conference.webp';
+import support from 'images/projects/support.webp';
+import myProject from 'images/projects/my-project.webp';
+import portfolio from 'images/projects/portfolio.webp';
+import calendar from 'images/projects/calendar.webp';
+import movies from 'images/projects/movies.webp';
+import movies2 from 'images/projects/movies2.webp';
+import mesto from 'images/projects/mesto.webp';
+import russianTravel from 'images/projects/russian-travel.webp';
+import learn from 'images/projects/learn.webp';
 
-import js from '../../src/images/stack/js.svg';
-import react from '../../src/images/stack/react.svg';
-import ts from '../../src/images/stack/ts.svg';
-import html from '../../src/images/stack/html.svg';
-import css from '../../src/images/stack/css.png';
-import scss from '../../src/images/stack/scss.svg';
-import storybook from '../../src/images/stack/storybook.svg';
-import jest from '../../src/images/stack/jest.svg';
-import reactTL from '../../src/images/stack/react-tl.svg';
-import eslint from '../../src/images/stack/eslint.svg';
-import stylelint from '../../src/images/stack/stylelint.svg';
-import fsd from '../../src/images/stack/fsd.svg';
-import redux from '../../src/images/stack/redux.svg';
-import rest from '../../src/images/stack/rest.png';
-import node from '../../src/images/stack/node.svg';
-import express from '../../src/images/stack/express.png';
-import mongo from '../../src/images/stack/mongo.png';
-import webpack from '../../src/images/stack/webpack.svg';
-import postman from '../../src/images/stack/postman.svg';
-import npm from '../../src/images/stack/npm.svg';
-import figma from '../../src/images/stack/figma.svg';
-import calendar1 from '../../src/images/stack/calendar.svg';
-import calendar2 from '../../src/images/stack/schedule-calendar.svg';
-import github from '../../src/images/stack/github.svg';
-import docker from '../../src/images/stack/docker.svg';
+import js from 'images/stack/js.svg';
+import react from 'images/stack/react.svg';
+import ts from 'images/stack/ts.svg';
+import html from 'images/stack/html.svg';
+import css from 'images/stack/css.png';
+import scss from 'images/stack/scss.svg';
+import storybook from 'images/stack/storybook.svg';
+import jest from 'images/stack/jest.svg';
+import reactTL from 'images/stack/react-tl.svg';
+import eslint from 'images/stack/eslint.svg';
+import stylelint from 'images/stack/stylelint.svg';
+import fsd from 'images/stack/fsd.svg';
+import redux from 'images/stack/redux.svg';
+import rest from 'images/stack/rest.png';
+import node from 'images/stack/node.svg';
+import express from 'images/stack/express.png';
+import mongo from 'images/stack/mongo.png';
+import webpack from 'images/stack/webpack.svg';
+import postman from 'images/stack/postman.svg';
+import npm from 'images/stack/npm.svg';
+import figma from 'images/stack/figma.svg';
+import calendar1 from 'images/stack/calendar.svg';
+import calendar2 from 'images/stack/schedule-calendar.svg';
+import github from 'images/stack/github.svg';
+import docker from 'images/stack/docker.svg';
+import strapi from 'images/stack/strapi.svg';
 
-import mail from '../../src/images/icons/mail.svg';
-import githubLink from '../../src/images/icons/github.svg';
-import telegram from '../../src/images/icons/telegram.svg';
-import cv from '../../src/images/icons/cv.svg';
+import mail from 'images/icons/mail.svg';
+import githubLink from 'images/icons/github.svg';
+import telegram from 'images/icons/telegram.svg';
+import cv from 'images/icons/cv.svg';
 
-export const projectsList = [
-  {
+export const projectsData = {
+  gameSchool: {
     id: 1,
-    title: 'Technical support',
-    description: `Personal user account with technical support communication function.`,
     stack: [
-      'Stack: React, SCSS, classnames'
+      'React, TypeScript, SCSS, Next'
+    ],
+    browser: 'https://xlab-game.com/',
+    image: school
+  },
+  gameCompany: {
+    id: 2,
+    stack: [
+      'React, TypeScript, SCSS, Strapi'
+    ],
+    browser: 'https://carx-europe.com/',
+    image: europe
+  },
+  meetUp: {
+    id: 3,
+    stack: [
+      'React, TypeScript, SCSS'
+    ],
+    browser: 'https://youtu.be/sIHjWfsTQT0',
+    image: conference
+  },
+  support: {
+    id: 4,
+    stack: [
+      'React, SCSS, classnames'
     ],
     github: 'https://github.com/ElenaUstimenko/test-task-for-CarX-Technologies',
     image: support
   },
-  {
-    id: 2,
-    title: 'My project',
-    description: `Pet-project: The project demonstrates my skills and abilities.`,
+  portfolio: {
+    id: 5,
     stack: [
-      'Stack: Webpack, React, TypeScript, SCSS, classnames, alias, mixins, i18n, theme switcher, ESLint, Stylelint, Loader, Error Boundary React, Jest, React Testing Library, Storybook'
+      'React, CSS, BEM, Prettier, i18n'
+    ],
+    github: 'https://github.com/ElenaUstimenko/my-portfolio',
+    image: portfolio
+  },
+  project2024: {
+    id: 6,
+    stack: [
+      'Webpack, React, TypeScript, SCSS, classnames, alias, mixins, i18n, theme switcher, ESLint, Stylelint, Loader, Error Boundary React, Jest, React Testing Library, Storybook'
     ],
     github: 'https://github.com/ElenaUstimenko/my-project',
     image: myProject
   },
-  {
-    id: 3,
-    title: 'Portfolio web-developer',
-    description: `The project demonstrates my skills and abilities. On the site it is possible to find information about all my projects and find all the necessary links to contact me.`,
-    stack: ['Stack: React, CSS, BEM, Prettier'],
-    github: 'https://github.com/ElenaUstimenko/my-portfolio',
-    image: portfolio
-  },
-  {
-    id: 4,
-    title: 'Women in the nuclear industry',
-    description: `Team development of the site for the Women’s Initiative Development Support Fund "Association of Women in the Nuclear Industry". Production in 2024.`,
+  calendar: {
+    id: 7,
     stack: [
-      'Stack: React, TypeScript, SCSS, Next.js, architecture FSD, UI Kit, classnames'
+      'React, TypeScript'
     ],
-    browser: 'no',
-    image: woman
-  },
-  {
-    id: 5,
-    title: 'Calendar',
-    description: `Pet-project: calendar (without using libraries) + added option to change theme.`,
-    stack: ['Stack: React, TypeScript'],
     github: 'https://github.com/ElenaUstimenko/calendar--light-dark-theme',
     image: calendar
   },
-  {
-    id: 6,
-    title: 'Analogue Kinopoisk (frontend)',
-    description: `Development of a site where you can find movies on request and save them in your personal account. Frontend.`,
+  kinopoiskFrontend: {
+    id: 8,
     stack: [
-      'Stack: HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Postman, Git'
+      'HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Postman, Git'
     ],
     github: 'https://github.com/ElenaUstimenko/movies-explorer-frontend.git',
     image: movies
   },
-  {
-    id: 7,
-    title: 'Analogue Kinopoisk (backend)',
-    description: `Development of a site where you can find movies on request and save them in your personal account. Backend.`,
+  kinopoiskBackend: {
+    id: 9,
     stack: [
-      'Stack: HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Postman, Git'
+      'HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Postman, Git'
     ],
     github: 'https://github.com/ElenaUstimenko/movies-explorer-api.git',
     image: movies2
   },
-  {
-    id: 8,
-    title: 'Analogue Instagram',
-    description: `Development of a site - an interactive page where you can add photos, delete them and put likes.`,
-    stack: ['Stack: React, Node.js, Express, MongoDB, Postman, Git'],
+  instagram: {
+    id: 10,
+    stack: [
+      'React, Node.js, Express, MongoDB, Postman, Git'
+    ],
     github: 'https://github.com/ElenaUstimenko/react-express-mesto-full',
     image: mesto
   },
-  {
-    id: 9,
-    title: 'Landing page',
-    description: `This project introduces people to the most picturesque corners of Russia.`,
-    stack: ['Stack: VanillaJS, HTML, CSS, flex, grid, BEM'],
+  landing1: {
+    id: 11,
+    stack: [
+      'VanillaJS, HTML, CSS, flex, grid, BEM'
+    ],
     github: 'https://github.com/ElenaUstimenko/russian-travel',
     image: russianTravel
   },
-  {
-    id: 10,
-    title: 'Landing page',
-    description: `The project is dedicated to teaching methods and techniques for quickly memorizing new information`,
-    stack: ['Stack: VanillaJS, HTML, CSS, BEM'],
+  landing2: {
+    id: 12,
+    stack: [
+      'VanillaJS, HTML, CSS, BEM'
+    ],
     github: 'https://github.com/ElenaUstimenko/how-to-learn',
     image: learn
   }
-];
+};
 
 export const stackList = [
   {
@@ -230,6 +238,10 @@ export const stackList = [
   {
     title: 'Docker',
     image: docker
+  },
+  {
+    title: 'Strapi',
+    image: strapi
   },
   {
     title: 'Linear',

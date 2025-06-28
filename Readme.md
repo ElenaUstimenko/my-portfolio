@@ -1,4 +1,4 @@
-![Image alt](./src/images/for-readme/main_img.png)
+![Image alt](./src/images/for-readme/main_img.webp)
 
 # **my-portfolio**
 
