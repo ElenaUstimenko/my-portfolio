@@ -1,108 +1,81 @@
 .languageSwitcher {
-  position: absolute;
-  top: 120px;
-  right: 10%;
-}
-
-.switch {
-  --_switch-bg-clr: #70a9c5;
-  --_switch-padding: 4px; /* padding around button*/
-  --_slider-bg-clr: rgba(12, 74, 110, 0.65); /* slider color unchecked */
-  --_slider-bg-clr-on: rgba(12, 74, 110, 1); /* slider color checked */
-  --_slider-txt-clr: #ffffff;
-  --_label-padding: 1rem 2rem; /* padding around the labels -  this gives the switch it's global width and height */
-  --_switch-easing: cubic-bezier(
-    0.47,
-    1.64,
-    0.41,
-    0.8
-  ); /* easing on toggle switch */
-  color: white;
-  width: fit-content;
+  position: relative;
+  box-sizing: border-box;
   display: flex;
-  justify-content: center;
-  position: relative;
-  border-radius: 9999px;
-  cursor: pointer;
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  position: relative;
-  isolation: isolate;
+  flex-direction: row;
+  align-items: center;
+  margin: 20px 10px;
 }
 
-.switch input[type="checkbox"] {
+.language {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 10px;
+  color: var(--color-white);
+}
+
+.languageSwitcher input[type="checkbox"] {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  opacity: 0;
 }
-.switch > span {
-  display: grid;
-  place-content: center;
-  transition: opacity 300ms ease-in-out 150ms;
-  padding: var(--_label-padding);
+
+.languageSwitcher label {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
 }
-.switch::before,
-.switch::after {
+
+.languageSwitcher label:before {
+  content: '';
+  width: 28px;
+  height: 60px;
+  background: linear-gradient(var(--color-bg-secondary), var(--color-bg-secondary)) no-repeat center;
+  background-size: 2px 64px;
+  display: inline-block;
+  transition: 0.2s ease-in;
+}
+.languageSwitcher label:after {
   content: "";
   position: absolute;
-  border-radius: inherit;
-  transition: inset 150ms ease-in-out;
+  width: 28px;
+  height: 28px;
+  border: 6px solid var(--color-bg-secondary);
+  border-radius: 50%;
+  left: 0;
+  top: 0;
+  z-index: 2;
+  background: var(--color-white);
+  box-sizing: border-box;
+  transition: 0.2s ease-in;
 }
-/* switch slider */
-.switch::before {
-  background-color: var(--_slider-bg-clr);
-  inset: var(--_switch-padding) 50% var(--_switch-padding)
-    var(--_switch-padding);
-  transition:
-    inset 500ms var(--_switch-easing),
-    background-color 500ms ease-in-out;
-  z-index: -1;
-  box-shadow:
-    inset 0 1px 1px rgba(0, 0, 0, 0.3),
-    0 1px rgba(255, 255, 255, 0.3);
+.languageSwitcher input[type="checkbox"]:checked + label:before {
+  background-image: linear-gradient(var(--color-bg-neon), var(--color-bg-neon));
 }
-/* switch bg color */
-.switch::after {
-  background-color: var(--_switch-bg-clr);
-  inset: 0;
-  z-index: -2;
+.languageSwitcher input[type="checkbox"]:checked + label:after {
+  top: 32px;
+  border-color: var(--color-bg-neon);
 }
-/* switch hover & focus */
-.switch:focus-within::after {
-  inset: -0.25rem;
+
+.language__option {
+  color: var(--color-bg-secondary);
 }
-.switch:has(input:checked):hover > span:first-of-type,
-.switch:has(input:not(:checked)):hover > span:last-of-type {
-  opacity: 1;
-  transition-delay: 0ms;
-  transition-duration: 100ms;
+
+.language__option.active {
+  color: var(--color-bg-neon);
 }
-/* switch hover */
-.switch:has(input:checked):hover::before {
-  inset: var(--_switch-padding) var(--_switch-padding) var(--_switch-padding)
-    45%;
+
+.language span {
+  cursor: pointer;
+  transition: color 0.2s ease-in;
 }
-.switch:has(input:not(:checked)):hover::before {
-  inset: var(--_switch-padding) 45% var(--_switch-padding)
-    var(--_switch-padding);
-}
-/* checked - move slider to right */
-.switch:has(input:checked)::before {
-  background-color: var(--_slider-bg-clr-on);
-  inset: var(--_switch-padding) var(--_switch-padding) var(--_switch-padding)
-    50%;
-}
-/* checked - set opacity */
-.switch > span:last-of-type,
-.switch > input:checked + span:first-of-type {
-  opacity: 0.75;
-}
-.switch > input:checked ~ span:last-of-type {
-  opacity: 1;
+
+.language span:hover {
+  color: var(--color-bg-neon);
 }

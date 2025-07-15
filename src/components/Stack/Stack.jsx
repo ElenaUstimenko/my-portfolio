@@ -48,7 +48,7 @@ const Stack = ({ stackRef }, ref) => {
                   alt={skill.title}
                 ></img>
               </div>
-              <div className='skill__name-container'>
+              <div className='skill__nameContainer'>
                 <p className='skill__name'>{skill.title}</p>
               </div>
             </motion.div>

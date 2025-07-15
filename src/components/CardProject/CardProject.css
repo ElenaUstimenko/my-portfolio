@@ -1,5 +1,5 @@
 .card__title {
-  font-size: 32px;
+  font-size: var(--font-size-32);
   font-weight: 600;
   text-align: left;
   background-color: var(--color-bg-secondary);
@@ -21,7 +21,7 @@
   line-height: 1.5em;
 }
 
-.card__stack-item {
+.card__stackItem {
   list-style-type: none;
   opacity: 0.9;
 }
@@ -34,11 +34,6 @@
   text-decoration: none;
   font-weight: 600;
   opacity: 0.8;
-}
-
-.card__link-future {
-  color: var(--color-bg-main);
-  opacity: 0.9;
 }
 
 .card__links {
@@ -61,6 +56,12 @@
     inset var(--color-box-shadow-brown2) 0 0 0 5px,
     inset var(--color-box-shadow-brown3) 0 0 0 6px;
   transition: 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+
+  @media (max-width: 380px) {
+    width: 280px;
+    height: 420px;
+    margin: 0; 
+  }
 }
 
 .card:hover .card__info {
@@ -151,18 +152,4 @@
   opacity: 0;
   transform: translateY(100%);
   transition: 5s 1s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-
-@media (max-width: 696px) {
-  .card__title {
-    font-size: 28px;
-  }
-}
-
-@media (max-width: 380px) {
-  .card__container {
-    width: 280px;
-    height: 420px;
-    margin: 0;
-  }
 }

@@ -8,7 +8,7 @@
 }
 
 .contacts__title {
-  font-size: 60px;
+  font-size: var(--font-size-80);
   font-weight: normal;
   color: var(--color-bg-neon);
   margin: 0;
@@ -18,11 +18,11 @@
 .contacts__data {
   color: var(--color-bg-secondary);
   text-align: center;
-  font-size: 25px;
+  font-size: var(--font-size-24);
   margin: 30px 0 30px;
 }
 
-.contacts__data-span {
+.contacts__dataSpan {
   color: var(--color-bg-secondary);
   animation: glowing 6s infinite ease-in;
 }

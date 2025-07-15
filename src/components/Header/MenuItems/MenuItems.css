@@ -1,0 +1,33 @@
+.header__link {
+  display: block;
+  width: 100%;
+  min-width: 140px;
+  height: 55px;
+  background: var(--color-bg-secondary);
+  line-height: 55px;
+  text-align: center;
+  font-size: var(--font-size-40);
+  margin: 0 10px;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+  border-radius: 10px;
+  z-index: 100;
+
+  &:hover {
+    color: var(--color-bg-neon);
+    box-shadow: 0 0 15px var(--color-bg-neon);
+    text-shadow: 0 0 15px var(--color-bg-neon);
+  }
+
+  &.pressed {
+    color: var(--color-bg-neon);
+    box-shadow: 0 0 15px var(--color-bg-neon);
+    text-shadow: 0 0 15px var(--color-bg-neon);
+  }
+
+  &.mobile {
+    margin: 10px 0;
+    width: 100%;
+  }
+}

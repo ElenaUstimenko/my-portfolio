@@ -37,7 +37,7 @@
 }
 
 .contact__title {
-  font-size: 15px;
+  font-size: var(--font-size-18);
   text-align: center;
   transition: 0.5s;
   color: var(--color-bg-secondary);
@@ -47,7 +47,7 @@
 
 .contact__text {
   color: var(--color-bg-neon);
-  font-size: 23px;
+  font-size: var(--font-size-24);
   display: flex;
   justify-content: center;
   text-align: center;

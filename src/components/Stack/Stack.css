@@ -9,7 +9,7 @@
 }
 
 .stack__title {
-  font-size: 60px;
+  font-size: var(--font-size-80);
   color: var(--color-bg-neon);
   font-weight: normal;
   width: 100%;
@@ -216,7 +216,7 @@
   transition: 0.5s;
 }
 
-.skill__name-container {
+.skill__nameContainer {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -228,7 +228,7 @@
 .skill__name {
   color: var(--color-bg-secondary);
   margin: 0;
-  font-size: 29px;
+  font-size: var(--font-size-24);
 }
 
 .skill__wrapper {

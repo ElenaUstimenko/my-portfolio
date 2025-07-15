@@ -39,7 +39,7 @@ const Contacts = ({ contactRef }, ref) => {
           className='contacts__data'
         >
           {t('currentLocation')}:{' '}
-          <span className='contacts__data-span'> {t('RussiaKrasnodar')} </span>{' '}
+          <span className='contacts__dataSpan'> {t('RussiaKrasnodar')} </span>{' '}
           <br />{' '}
         </motion.p>
         <motion.p
@@ -47,7 +47,7 @@ const Contacts = ({ contactRef }, ref) => {
           custom={0.7}
           className='contacts__data'
         >
-          {t('status')}: <span className='contacts__data-span'>{t('openToWork')}</span>
+          {t('status')}: <span className='contacts__dataSpan'>{t('openToWork')}</span>
         </motion.p>
       </div>
       <div className='contact-container'>

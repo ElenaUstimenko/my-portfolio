@@ -53,14 +53,14 @@ const Projects = ({ projectsRef }, ref) => {
           />
         ))}
       </ul>
-      <div className='projects__information'>
+      <div className='projects__info'>
         <motion.p
           variants={textAnimation}
           custom={0.3}
           className='projects__data'
         >
           {t('andOther')}
-          <span className='projects__data-span'> GitHub... </span> <br />{' '}
+          <span className='projects__dataSpan'> GitHub... </span> <br />{' '}
         </motion.p>
       </div>
     </motion.div>

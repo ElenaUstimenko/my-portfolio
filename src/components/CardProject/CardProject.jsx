@@ -85,9 +85,9 @@ const CardProject = ({ title, description, stack, github, browser, image }) => {
         <div className='card__info'>
           <h1 className='card__title'>{title}</h1>
           <p className='card__description text'>{description}</p>
-          <ul className='card__stack-items'>
+          <ul className='card__stackItems'>
             {stack.map((item, index) => (
-              <li className='card__stack-item text' key={index}>
+              <li className='card__stackItem text' key={index}>
                 {t('stackTitle')}: {item}
               </li>
             ))}

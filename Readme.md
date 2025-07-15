@@ -32,6 +32,4 @@ On the site you can find information about most of my projects and find all the 
 
 ✔️ Adaptive layout
 
-✔️ Prettier
-
 ---
