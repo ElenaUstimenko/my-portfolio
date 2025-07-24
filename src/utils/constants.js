@@ -269,8 +269,8 @@ export const contactList = [
   {
     title: 'email',
     image: mail,
-    text: 'elena.ustimenko@ internet.ru',
-    link: 'mailto:elena.ustimenko@internet.ru'
+    text: 'ystimenko.e@mail.ru',
+    link: 'mailto:ystimenko.e@mail.ru'
   },
   {
     title: 'CV',
