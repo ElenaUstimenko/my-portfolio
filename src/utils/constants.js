@@ -1,5 +1,7 @@
+import myProject2025 from 'images/projects/my-project2025.webp';
 import europe from 'images/projects/EU.webp';
 import school from 'images/projects/school.webp';
+import carx from 'images/projects/carx.webp';
 import conference from 'images/projects/conference.webp';
 import support from 'images/projects/support.webp';
 import myProject from 'images/projects/my-project.webp';
@@ -44,6 +46,15 @@ import telegram from 'images/icons/telegram.svg';
 import cv from 'images/icons/cv.svg';
 
 export const projectsData = {
+  project2025: {
+    id: 0,
+    stack: [
+      'Next, React, TypeScript'
+    ],
+    browser: '',
+    github: '',
+    image: myProject2025
+  },
   gameSchool: {
     id: 1,
     stack: [
@@ -60,8 +71,16 @@ export const projectsData = {
     browser: 'https://carx-europe.com/',
     image: europe
   },
-  meetUp: {
+  carxOnline: {
     id: 3,
+    stack: [
+      'frontend: React, TypeScript, Next, CSS-in-JS, backend: PHP, Laravel, admin: Vue, TypeScript'
+    ],
+    browser: 'https://carx-online.com/',
+    image: carx
+  },
+  meetUp: {
+    id: 4,
     stack: [
       'React, TypeScript, SCSS'
     ],
@@ -69,7 +88,7 @@ export const projectsData = {
     image: conference
   },
   support: {
-    id: 4,
+    id: 5,
     stack: [
       'React, SCSS, classnames'
     ],
@@ -77,7 +96,7 @@ export const projectsData = {
     image: support
   },
   portfolio: {
-    id: 5,
+    id: 6,
     stack: [
       'React, CSS, BEM, Prettier, i18n'
     ],
@@ -85,7 +104,7 @@ export const projectsData = {
     image: portfolio
   },
   project2024: {
-    id: 6,
+    id: 7,
     stack: [
       'Webpack, React, TypeScript, SCSS, classnames, alias, mixins, i18n, theme switcher, ESLint, Stylelint, Loader, Error Boundary React, Jest, React Testing Library, Storybook'
     ],
@@ -93,7 +112,7 @@ export const projectsData = {
     image: myProject
   },
   calendar: {
-    id: 7,
+    id: 8,
     stack: [
       'React, TypeScript'
     ],
@@ -101,7 +120,7 @@ export const projectsData = {
     image: calendar
   },
   kinopoiskFrontend: {
-    id: 8,
+    id: 9,
     stack: [
       'HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Postman, Git'
     ],
@@ -109,7 +128,7 @@ export const projectsData = {
     image: movies
   },
   kinopoiskBackend: {
-    id: 9,
+    id: 10,
     stack: [
       'HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Postman, Git'
     ],
@@ -117,7 +136,7 @@ export const projectsData = {
     image: movies2
   },
   instagram: {
-    id: 10,
+    id: 11,
     stack: [
       'React, Node.js, Express, MongoDB, Postman, Git'
     ],
@@ -125,7 +144,7 @@ export const projectsData = {
     image: mesto
   },
   landing1: {
-    id: 11,
+    id: 12,
     stack: [
       'VanillaJS, HTML, CSS, flex, grid, BEM'
     ],
@@ -133,7 +152,7 @@ export const projectsData = {
     image: russianTravel
   },
   landing2: {
-    id: 12,
+    id: 13,
     stack: [
       'VanillaJS, HTML, CSS, BEM'
     ],

@@ -20,6 +20,10 @@ const resources = {
       andOther: 'and other mini projects at',
       stackTitle: 'Stack',
       projectsList: {
+        project2025: {
+          title: 'My project 2025',
+          description: `My code and creativity will be here soon. Project created to show an example of my code`,
+        },
         gameSchool: {
           title: 'Site for Game school',
           description: `Website for game development school, with a form of communication with the school by email`,
@@ -27,6 +31,10 @@ const resources = {
         gameCompany: {
           title: 'Site for Game company',
           description: `Website site for game company with admin panel to add/change/remove vacancies`
+        },
+        carxOnline: {
+          title: 'Site for Game company',
+          description: `Support and refactoring of the company’s existing website (changing data via admin panel, sending data from form to admin and email)`
         },
         meetUp: {
           title: 'GameDev MeetUp',
@@ -89,6 +97,10 @@ const resources = {
       andOther: 'и другие мини проекты на',
       stackTitle: 'Стек',
       projectsList: {
+        project2025: {
+          title: 'Мой проект 2025',
+          description: `Скоро здесь появится мой код и творчество. Проект создан, чтобы показать пример моего кода`,
+        },
         gameSchool: {
           title: 'Сайт для Школы разработки игр',
           description: `Сайт для школы разработки игр, с формой связи со школой по электронной почте`,
@@ -96,6 +108,10 @@ const resources = {
         gameCompany: {
           title: 'Сайт для игровой компании',
           description: `Сайт для игровой компании с админикой для добавления/изменения/удаления вакансий`
+        },
+        carxOnline: {
+          title: 'Сайт для игровой компании',
+          description: `Поддержка и рефакторинг существующего сайта компании (изменение данных через админ панель, отправка данных из формы в админку и на email)`
         },
         meetUp: {
           title: 'GameDev MeetUp',
