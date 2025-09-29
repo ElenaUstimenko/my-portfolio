@@ -48,26 +48,20 @@ import cv from 'images/icons/cv.svg';
 export const projectsData = {
   project2025: {
     id: 0,
-    stack: [
-      'Next, React, TypeScript'
-    ],
+    stack: ['Next, React, TypeScript'],
     browser: '',
-    github: '',
+    github: 'https://github.com/ElenaUstimenko/my-project-2025',
     image: myProject2025
   },
   gameSchool: {
     id: 1,
-    stack: [
-      'React, TypeScript, SCSS, Next'
-    ],
+    stack: ['React, TypeScript, SCSS, Next'],
     browser: 'https://xlab-game.com/',
     image: school
   },
   gameCompany: {
     id: 2,
-    stack: [
-      'React, TypeScript, SCSS, Strapi'
-    ],
+    stack: ['React, TypeScript, SCSS, Strapi'],
     browser: 'https://carx-europe.com/',
     image: europe
   },
@@ -81,25 +75,19 @@ export const projectsData = {
   },
   meetUp: {
     id: 4,
-    stack: [
-      'React, TypeScript, SCSS'
-    ],
+    stack: ['React, TypeScript, SCSS'],
     browser: 'https://youtu.be/sIHjWfsTQT0',
     image: conference
   },
   support: {
     id: 5,
-    stack: [
-      'React, SCSS, classnames'
-    ],
+    stack: ['React, SCSS, classnames'],
     github: 'https://github.com/ElenaUstimenko/test-task-for-CarX-Technologies',
     image: support
   },
   portfolio: {
     id: 6,
-    stack: [
-      'React, CSS, BEM, Prettier, i18n'
-    ],
+    stack: ['React, CSS, BEM, Prettier, i18n'],
     github: 'https://github.com/ElenaUstimenko/my-portfolio',
     image: portfolio
   },
@@ -113,9 +101,7 @@ export const projectsData = {
   },
   calendar: {
     id: 8,
-    stack: [
-      'React, TypeScript'
-    ],
+    stack: ['React, TypeScript'],
     github: 'https://github.com/ElenaUstimenko/calendar--light-dark-theme',
     image: calendar
   },
@@ -137,25 +123,19 @@ export const projectsData = {
   },
   instagram: {
     id: 11,
-    stack: [
-      'React, Node.js, Express, MongoDB, Postman, Git'
-    ],
+    stack: ['React, Node.js, Express, MongoDB, Postman, Git'],
     github: 'https://github.com/ElenaUstimenko/react-express-mesto-full',
     image: mesto
   },
   landing1: {
     id: 12,
-    stack: [
-      'VanillaJS, HTML, CSS, flex, grid, BEM'
-    ],
+    stack: ['VanillaJS, HTML, CSS, flex, grid, BEM'],
     github: 'https://github.com/ElenaUstimenko/russian-travel',
     image: russianTravel
   },
   landing2: {
     id: 13,
-    stack: [
-      'VanillaJS, HTML, CSS, BEM'
-    ],
+    stack: ['VanillaJS, HTML, CSS, BEM'],
     github: 'https://github.com/ElenaUstimenko/how-to-learn',
     image: learn
   }
