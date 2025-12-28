@@ -22,11 +22,11 @@ const resources = {
       projectsList: {
         project2025: {
           title: 'My project 2025',
-          description: `My code and creativity will be here soon. Project created to show an example of my code`,
+          description: `My code and creativity will be here soon. Project created to show an example of my code`
         },
         gameSchool: {
           title: 'Site for Game school',
-          description: `Website for game development school, with a form of communication with the school by email`,
+          description: `Website for game development school, with a form of communication with the school by email`
         },
         gameCompany: {
           title: 'Site for Game company',
@@ -35,6 +35,10 @@ const resources = {
         carxOnline: {
           title: 'Site for Game company',
           description: `Support and refactoring of the company’s existing website (changing data via admin panel, sending data from form to admin and email)`
+        },
+        carxStoreSupport: {
+          title: 'Site part for Support',
+          description: `Part of the site that helps the user to get technical support for the company’s products. Work in process`
         },
         meetUp: {
           title: 'GameDev MeetUp',
@@ -99,11 +103,11 @@ const resources = {
       projectsList: {
         project2025: {
           title: 'Мой проект 2025',
-          description: `Скоро здесь появится мой код и творчество. Проект создан, чтобы показать пример моего кода`,
+          description: `Скоро здесь появится мой код и творчество. Проект создан, чтобы показать пример моего кода`
         },
         gameSchool: {
           title: 'Сайт для Школы разработки игр',
-          description: `Сайт для школы разработки игр, с формой связи со школой по электронной почте`,
+          description: `Сайт для школы разработки игр, с формой связи со школой по электронной почте`
         },
         gameCompany: {
           title: 'Сайт для игровой компании',
@@ -112,6 +116,10 @@ const resources = {
         carxOnline: {
           title: 'Сайт для игровой компании',
           description: `Поддержка и рефакторинг существующего сайта компании (изменение данных через админ панель, отправка данных из формы в админку и на email)`
+        },
+        carxStoreSupport: {
+          title: 'Часть сайта для тех.поддержки',
+          description: `Часть сайта, помогающая пользователю получить техническую поддержку по продуктам компании. Работа в процессе`
         },
         meetUp: {
           title: 'GameDev MeetUp',
@@ -130,8 +138,8 @@ const resources = {
           description: `Pet-проект: Проект демонстрирует мои навыки и способности`
         },
         calendar: {
-          'title': 'Календарь',
-          'description': `Pet-проект: календарь (без использования библиотек) + добавлена опция изменения темы`
+          title: 'Календарь',
+          description: `Pet-проект: календарь (без использования библиотек) + добавлена опция изменения темы`
         },
         kinopoiskFrontend: {
           title: 'Аналог Кинопоиска (фронтенд)',
@@ -158,15 +166,13 @@ const resources = {
   }
 };
 
-i18n
-  .use(initReactI18next)
-  .init({
-    resources,
-    lng: 'en',
-    fallbackLng: 'en',
-    interpolation: {
-      escapeValue: false
-    }
-  });
+i18n.use(initReactI18next).init({
+  resources,
+  lng: 'en',
+  fallbackLng: 'en',
+  interpolation: {
+    escapeValue: false
+  }
+});
 
 export default i18n;

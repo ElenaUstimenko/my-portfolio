@@ -2,6 +2,7 @@ import myProject2025 from 'images/projects/my-project2025.webp';
 import europe from 'images/projects/EU.webp';
 import school from 'images/projects/school.webp';
 import carx from 'images/projects/carx.webp';
+import store from 'images/projects/store.webp';
 import conference from 'images/projects/conference.webp';
 import support from 'images/projects/support.webp';
 import myProject from 'images/projects/my-project.webp';
@@ -73,26 +74,34 @@ export const projectsData = {
     browser: 'https://carx-online.com/',
     image: carx
   },
-  meetUp: {
+  carxStoreSupport: {
     id: 4,
+    stack: [
+      'frontend: React, TypeScript, Next, backend: Java, admin: React Admin'
+    ],
+    browser: 'https://carx-store.com/support',
+    image: store
+  },
+  meetUp: {
+    id: 5,
     stack: ['React, TypeScript, SCSS'],
     browser: 'https://youtu.be/sIHjWfsTQT0',
     image: conference
   },
   support: {
-    id: 5,
+    id: 6,
     stack: ['React, SCSS, classnames'],
     github: 'https://github.com/ElenaUstimenko/test-task-for-CarX-Technologies',
     image: support
   },
   portfolio: {
-    id: 6,
+    id: 7,
     stack: ['React, CSS, BEM, Prettier, i18n'],
     github: 'https://github.com/ElenaUstimenko/my-portfolio',
     image: portfolio
   },
   project2024: {
-    id: 7,
+    id: 8,
     stack: [
       'Webpack, React, TypeScript, SCSS, classnames, alias, mixins, i18n, theme switcher, ESLint, Stylelint, Loader, Error Boundary React, Jest, React Testing Library, Storybook'
     ],
@@ -100,13 +109,13 @@ export const projectsData = {
     image: myProject
   },
   calendar: {
-    id: 8,
+    id: 9,
     stack: ['React, TypeScript'],
     github: 'https://github.com/ElenaUstimenko/calendar--light-dark-theme',
     image: calendar
   },
   kinopoiskFrontend: {
-    id: 9,
+    id: 10,
     stack: [
       'HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Postman, Git'
     ],
@@ -114,7 +123,7 @@ export const projectsData = {
     image: movies
   },
   kinopoiskBackend: {
-    id: 10,
+    id: 11,
     stack: [
       'HTML, CSS, JavaScript, React, Node.js, Express, MongoDB, Postman, Git'
     ],
@@ -122,19 +131,19 @@ export const projectsData = {
     image: movies2
   },
   instagram: {
-    id: 11,
+    id: 12,
     stack: ['React, Node.js, Express, MongoDB, Postman, Git'],
     github: 'https://github.com/ElenaUstimenko/react-express-mesto-full',
     image: mesto
   },
   landing1: {
-    id: 12,
+    id: 13,
     stack: ['VanillaJS, HTML, CSS, flex, grid, BEM'],
     github: 'https://github.com/ElenaUstimenko/russian-travel',
     image: russianTravel
   },
   landing2: {
-    id: 13,
+    id: 14,
     stack: ['VanillaJS, HTML, CSS, BEM'],
     github: 'https://github.com/ElenaUstimenko/how-to-learn',
     image: learn
