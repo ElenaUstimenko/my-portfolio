@@ -49,7 +49,7 @@ export const projectsData = {
   project2025: {
     id: 0,
     stack: ['Next, React, TypeScript'],
-    browser: '',
+    browser: 'https://my-project-2025-ten.vercel.app',
     github: 'https://github.com/ElenaUstimenko/my-project-2025',
     image: myProject2025
   },
